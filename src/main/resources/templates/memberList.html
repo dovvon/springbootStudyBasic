@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>회원리스트</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <th>No</th>
+                <th>Name</th>
+            </thead>
+            <tbody>
+            <tr th:each="member : ${memberList}">
+                <td th:text="${member.id}">0</td>
+                <td th:text="${member.name}">홍길동</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
